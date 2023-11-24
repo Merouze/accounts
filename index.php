@@ -1,3 +1,11 @@
+<?php
+require "../accounts/vendor/autoload.php";
+include ".includes/_db.php";
+session_start();
+$_SESSION['myToken'] = md5(uniqid(mt_rand(), true));
+
+
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
