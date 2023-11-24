@@ -8,12 +8,12 @@
     $dotenv->load();
 
     // Connect to the database
-    $dtcosycaen = new PDO(
+    $accounts = new PDO(
         $_ENV['DB_HOST'],
         $_ENV['DB_USER'],
         $_ENV['DB_PWD']
     );
-    $dtcosycaen->setAttribute(
+    $accounts->setAttribute(
         PDO::ATTR_DEFAULT_FETCH_MODE,
         PDO::FETCH_ASSOC
     );
